@@ -1,0 +1,29 @@
+@import "../global/variables";
+
+.features__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: $basic_green no-repeat center;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/icon-leaf.svg");
+  }
+
+  &--tub::before {
+    background-image: url("../../img/icon-tub.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../../img/icon-eat.svg");
+  }
+
+  &--alarm::before {
+    background-image: url("../../img/icon-alarm.svg");
+  }
+}

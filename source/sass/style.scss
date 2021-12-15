@@ -1,1 +1,53 @@
-// Начните писать стили здесь
+@import "./global/variables";
+@import "./global/global";
+
+// page-header block
+@import "./components/page-header";
+
+// main-nav block
+@import "./components/main-nav";
+
+// site-list block
+@import "./components/site-list";
+
+// promo block
+@import "./components/promo";
+
+// button
+@import "./components/button";
+
+// program block
+@import "./components/program";
+
+// features block
+@import "./components/features";
+
+// example block
+@import "./components/example";
+
+// page-footer block
+@import "./components/page-footer";
+
+// contact block
+@import "./components/contact";
+
+// social
+@import "./components/social";
+
+// copyright block
+@import "./components/copyright";
+
+// catalog block
+@import "./components/catalog";
+
+// product-card block
+@import "./components/product-card";
+
+// additional-products block
+@import "./components/additional-products";
+
+// banner block
+@import "./components/banner";
+
+// form block
+@import "./components/form";
