@@ -1,7 +1,13 @@
 @import "../global/variables";
 
 .features__item {
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
   position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -26,4 +32,14 @@
   &--alarm::before {
     background-image: url("../../img/icon-alarm.svg");
   }
+}
+
+.features__title {
+  margin: 0 0 40px;
+}
+
+.features__list {
+  margin: 0 0 49px;
+  padding: 0;
+  list-style-type: none;
 }

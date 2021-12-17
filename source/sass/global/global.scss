@@ -1,3 +1,33 @@
+@import "variables";
+
 .page {
-  background-color: #ffffff;
+  background-color: $basic_white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.page__body {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  color: $basic_black;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
 }
