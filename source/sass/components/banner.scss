@@ -30,3 +30,15 @@
     height: 290px;
   }
 }
+
+.banner-text {
+  margin: 0;
+  color: $basic_white;
+  font-family: "Arial", sans-serif;
+}
+
+.banner__text {
+  position: relative;
+  max-width: 160px;
+  text-align: center;
+}
