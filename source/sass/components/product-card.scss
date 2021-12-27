@@ -9,8 +9,12 @@
   margin-bottom: 8px;
 }
 
-.product-card--empty .product-card__desc p {
+.product-card--empty .product-card__desc-text {
+  margin-top: 0;
   margin-bottom: 21px;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .product-card--empty .product-card__button {
@@ -26,7 +30,7 @@
 }
 
 .product-card__details {
-  font-family: "Arial", sans-serif;
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
 }
@@ -37,10 +41,4 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-}
-
-.product-card__desc p {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
 }

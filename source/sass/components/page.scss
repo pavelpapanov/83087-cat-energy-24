@@ -1,0 +1,31 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.page {
+  background-color: $basic_white;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}
+
+.page__body {
+  padding: 0;
+  margin: 0;
+}
+
+.page__title {
+  color: $basic_black;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 27px;
+  margin-bottom: 37px;
+}
+
+.page__description {
+  margin: 0 0 39px;
+  color: $basic_black;
+  text-transform: uppercase;
+}

@@ -1,34 +1,5 @@
 @import "variables";
 
-.page {
-  background-color: $basic_white;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special_dark-grey;
-}
-
-.page__body {
-  padding: 0;
-  margin: 0;
-}
-
-.page-title {
-  color: $basic_black;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1;
-  margin-top: 27px;
-  margin-bottom: 37px;
-}
-
-.page-description {
-  margin: 0 0 39px;
-  color: $basic_black;
-  text-transform: uppercase;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,16 +9,4 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.section-title {
-  color: $basic_black;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 40px;
-}
-
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
 }

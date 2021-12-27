@@ -19,26 +19,20 @@
   }
 }
 
-.promo-title {
+.promo__title {
+  margin: 0 0 25px;
+  position: relative;
   color: $basic_white;
   font-size: 36px;
   line-height: 1;
 }
 
-.promo__title {
-  margin: 0 0 25px;
-  position: relative;
-}
-
-.promo-text {
-  color: $basic_white;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
 .promo__text {
   margin: 0 0 29px;
   position: relative;
+  color: $basic_white;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .promo__image {

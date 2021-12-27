@@ -1,6 +1,13 @@
 @import "./global/variables";
 @import "./global/fonts";
 @import "./global/global";
+@import "./global/mixins";
+
+// page
+@import "./components/page";
+
+// container
+@import "./components/container";
 
 // page-header block
 @import "./components/page-header";
@@ -20,11 +27,17 @@
 // program block
 @import "./components/program";
 
+// program card block
+@import "./components/program-card";
+
 // features block
 @import "./components/features";
 
 // example block
 @import "./components/example";
+
+// example stats block
+@import "./components/example-stats";
 
 // page-footer block
 @import "./components/page-footer";
