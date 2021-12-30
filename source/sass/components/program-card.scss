@@ -1,0 +1,22 @@
+@import "../global/variables";
+
+.program-card {
+  background-color: $basic_grey;
+}
+
+.program-card__title {
+  margin: 0 0 20px;
+}
+
+.program-card__text {
+  font-family: $secondary_font;
+  margin: 0 0 23px;
+}
+
+.program-card__link {
+  color: $basic_black;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}

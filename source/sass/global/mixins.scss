@@ -1,0 +1,14 @@
+@import "../global/variables";
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin section-title {
+  color: $basic_black;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+}

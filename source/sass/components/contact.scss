@@ -1,0 +1,24 @@
+@import "../global/variables";
+
+.contact {
+  background-color: $basic_grey;
+}
+
+.contact__wrapper {
+  padding: 26px 20px;
+}
+
+.contact__title {
+  margin: 0;
+  color: $special_black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contact__address {
+  font-family: $secondary_font;
+  font-style: inherit;
+  line-height: 20px;
+}

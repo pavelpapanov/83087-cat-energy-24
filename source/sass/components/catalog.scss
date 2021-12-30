@@ -1,0 +1,15 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.catalog__list {
+  @include reset-list;
+}
+
+.catalog__item {
+  padding: 19px 20px 25px;
+  border-top: 1px solid $special_grey-3;
+
+  &:last-child {
+    border-bottom: 1px solid $special_grey-3;
+  }
+}

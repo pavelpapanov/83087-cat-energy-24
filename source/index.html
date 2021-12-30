@@ -5,6 +5,7 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -29,8 +30,8 @@
 <main class="page-main">
   <section class="promo">
     <div class="container promo__container">
-      <h1 class="promo__title promo-title">Функциональное питание для котов</h1>
-      <p class="promo__text promo-text">Занялся собой? Займись котом!</p>
+      <h1 class="promo__title">Функциональное питание для котов</h1>
+      <p class="promo__text">Занялся собой? Займись котом!</p>
       <img src="img/promo-product.png" alt="Cat energy pro со вкусом курицы" class="promo__image" width="280" height="270">
       <a href="#" class="promo__button button">подобрать программу</a>
     </div>
@@ -39,24 +40,24 @@
     <h2 class="visually-hidden">Программы для котов</h2>
     <div class="container program__container">
       <ul class="program__list">
-        <li class="program__item program-card">
+        <li class="program__item program-card program-card--slim">
           <h3 class="program-card__title program__title">Похудение</h3>
           <p class="program-card__text">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="#" class="program-card__link program__link">каталог slim</a>
+          <a href="#" class="program-card__link">каталог slim</a>
         </li>
-        <li class="program__item program-card">
+        <li class="program__item program-card program-card--pro">
           <h3 class="program-card__title program__title">Набор массы</h3>
           <p class="program-card__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
             Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="#" class="program-card__link program__link">каталог pro</a>
+          <a href="#" class="program-card__link">каталог pro</a>
         </li>
       </ul>
     </div>
   </section>
   <section class="features">
     <div class="container features__container">
-      <h2 class="section-title">Как это работает</h2>
+      <h2 class="features__title">Как это работает</h2>
       <ul class="features__list">
         <li class="features__item features__item--leaf">Функциональное питание содержит только полезные питательные
           вещества.
@@ -75,8 +76,8 @@
   </section>
   <section class="example">
     <div class="container example__container">
-      <h2 class="section-title">Живой пример</h2>
-      <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
         результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
         день.</p>
       <div class="example__stats example-stats">
@@ -87,15 +88,15 @@
         <p class="example-stats__num">60 дней</p>
         <p class="example-stats__text">затрачено времени</p>
       </div>
-      <p class="example-price">Затраты на питание: 15 000 РУБ.</p>
+      <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
       <img src="img/cat-before-mobile.png" alt="Кот до программы" width="280" height="232">
       <img src="img/cat-after-mobile.png" alt="Кот после программы" width="243" height="232">
-      <div class="example-states">
-        <button class="example-button example-button--current" type="button">Было</button>
-        <div class="example-line">
-          <div class="example-line-indicator"></div>
+      <div class="example__states">
+        <button class="example__button example__button--current" type="button">Было</button>
+        <div class="example__line">
+          <div class="example__line-indicator"></div>
         </div>
-        <button class="example-button example-button--pending" type="button">Стало</button>
+        <button class="example__button example__button--pending" type="button">Стало</button>
       </div>
     </div>
   </section>

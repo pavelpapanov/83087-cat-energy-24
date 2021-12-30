@@ -1,0 +1,46 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.features__item {
+  font-family: $secondary_font;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: $basic_green no-repeat center;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/icon-leaf.svg");
+  }
+
+  &--tub::before {
+    background-image: url("../../img/icon-tub.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../../img/icon-eat.svg");
+  }
+
+  &--alarm::before {
+    background-image: url("../../img/icon-alarm.svg");
+  }
+}
+
+.features__title {
+  @include section-title;
+  margin: 0 0 40px;
+}
+
+.features__list {
+  @include reset-list;
+  margin-bottom: 49px;
+}

@@ -1,0 +1,41 @@
+@import "../global/variables";
+
+.banner {
+  background: url("../../img/gift-background.png") no-repeat center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icon-gift.svg");
+  }
+}
+
+.banner__container {
+  height: 290px;
+}
+
+.banner__text {
+  margin: 0;
+  color: $basic_white;
+  font-family: $secondary_font;
+  position: relative;
+  max-width: 160px;
+  text-align: center;
+}

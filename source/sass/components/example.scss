@@ -1,0 +1,40 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.example {
+  background-color: $special_light-grey;
+  padding: 25px 20px 40px;
+}
+
+.example__title {
+  @include section-title;
+  margin: 0 0 40px;
+}
+
+.example__text {
+  font-family: $secondary_font;
+  margin-bottom: 20px;
+}
+
+.example__stats {
+  padding: 14px 15px 18px;
+}
+
+.example__price {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: $basic_black;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: $basic_black;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
