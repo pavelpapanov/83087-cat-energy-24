@@ -75,3 +75,30 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop) {
+  .example__container {
+    display: flex;
+  }
+
+  .example__content {
+    max-width: 440px;
+  }
+
+  .example__aside {
+    flex-wrap: wrap;
+  }
+
+  .example__price {
+    flex: 0 0 100%;
+    margin-left: unset;
+    margin-top: 60px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .example__images {
+    margin-left: auto;
+    max-width: 592px;
+  }
+}
