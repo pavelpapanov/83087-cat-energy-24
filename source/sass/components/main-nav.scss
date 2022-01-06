@@ -24,7 +24,7 @@
   height: 2px;
   vertical-align: bottom;
   background: $basic_black;
-  transition: background .3s .5s;
+  transition: background 0.3s 0.5s;
 
   &::before,
   &::after {
@@ -35,7 +35,7 @@
     height: 2px;
     background: $basic_black;
     transform-origin: 50% 50%;
-    transition: top .3s .3s,transform .3s;
+    transition: top 0.3s 0.3s, transform 0.3s;
   }
 
   &::before {
