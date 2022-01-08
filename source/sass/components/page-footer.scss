@@ -1,6 +1,9 @@
 @import "../global/variables";
 
 .page-footer {
+  max-width: $desktop_width;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $basic_grey;
 }
 
