@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.example__aside {
+.example__additional-info {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -24,9 +24,8 @@
 }
 
 .example__stats {
-  box-sizing: border-box;
   padding: 14px 15px 18px;
-  flex: 0 0 124px;
+  flex-basis: 124px;
 }
 
 .example__price {
@@ -36,7 +35,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  flex: 1 0 100%;
+  flex-basis: 100%;
 }
 
 .example__button {
@@ -50,18 +49,18 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet_width) {
   .example {
     background-color: transparent;
   }
 
-  .example__aside {
+  .example__additional-info {
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
 
   .example__stats {
-    flex: 0 0 162px;
+    flex-basis: 162px;
     margin-right: 42px;
 
     &:last-of-type {
@@ -71,12 +70,12 @@
 
   .example__price {
     margin-left: auto;
-    flex: 0 0 174px;
+    flex-basis: 174px;
     text-align: right;
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop_width) {
   .example__container {
     display: flex;
   }
@@ -85,12 +84,12 @@
     max-width: 440px;
   }
 
-  .example__aside {
+  .example__additional-info {
     flex-wrap: wrap;
   }
 
   .example__price {
-    flex: 0 0 100%;
+    flex-basis: 100%;
     margin-left: unset;
     margin-top: 60px;
     margin-bottom: 0;

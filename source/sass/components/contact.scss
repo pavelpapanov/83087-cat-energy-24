@@ -29,7 +29,7 @@
   height: auto;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet_width) {
   .contact__wrapper {
     padding: 56px 70px;
   }
@@ -46,7 +46,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop_width) {
   .contact__container {
     position: relative;
   }

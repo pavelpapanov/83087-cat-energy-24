@@ -26,13 +26,13 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet_width) {
   .program__item {
     margin-bottom: 30px;
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop_width) {
   .program__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

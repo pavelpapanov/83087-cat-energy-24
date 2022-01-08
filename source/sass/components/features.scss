@@ -45,7 +45,7 @@
   margin-bottom: 49px;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet_width) {
   .features__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop_width) {
   .features__list {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 55px;

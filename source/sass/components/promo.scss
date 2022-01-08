@@ -54,7 +54,7 @@
   width: 100%;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet_width) {
   .promo__image {
     order: 2;
   }

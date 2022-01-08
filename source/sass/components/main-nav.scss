@@ -51,7 +51,7 @@
   display: none;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet_width) {
   .main-nav__toggle {
     display: none;
   }
