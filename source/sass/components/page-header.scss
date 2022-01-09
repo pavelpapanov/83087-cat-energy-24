@@ -3,4 +3,9 @@
 .page-header__container {
   padding-top: 10px;
   padding-bottom: 17px;
+  display: flex;
+}
+
+.page-header__logo {
+  text-decoration: none;
 }

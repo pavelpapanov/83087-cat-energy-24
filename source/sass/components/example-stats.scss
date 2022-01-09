@@ -27,3 +27,10 @@
   margin: 0 auto;
   width: 87px;
 }
+
+@media (min-width: $tablet_width) {
+  .example-stats__text {
+    background-color: $basic_white;
+    width: max-content;
+  }
+}

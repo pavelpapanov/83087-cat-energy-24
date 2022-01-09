@@ -16,7 +16,8 @@
       <span class="visually-hidden">Cat energy</span>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span><span class="main-nav__toggle-line"></span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a>Главная</a></li>
@@ -76,27 +77,34 @@
   </section>
   <section class="example">
     <div class="container example__container">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
-        результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
-        день.</p>
-      <div class="example__stats example-stats">
-        <p class="example-stats__num">5 кг</p>
-        <p class="example-stats__text">снижение веса</p>
-      </div>
-      <div class="example__stats example-stats">
-        <p class="example-stats__num">60 дней</p>
-        <p class="example-stats__text">затрачено времени</p>
-      </div>
-      <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-      <img src="img/cat-before-mobile.png" alt="Кот до программы" width="280" height="232">
-      <img src="img/cat-after-mobile.png" alt="Кот после программы" width="243" height="232">
-      <div class="example__states">
-        <button class="example__button example__button--current" type="button">Было</button>
-        <div class="example__line">
-          <div class="example__line-indicator"></div>
+      <div class="example__content">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов в
+          день.</p>
+        <div class="example__additional-info">
+          <div class="example__stats example-stats">
+            <p class="example-stats__num">5 кг</p>
+            <p class="example-stats__text">снижение веса</p>
+          </div>
+          <div class="example__stats example-stats">
+            <p class="example-stats__num">60 дней</p>
+            <p class="example-stats__text">затрачено времени</p>
+          </div>
+          <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
         </div>
-        <button class="example__button example__button--pending" type="button">Стало</button>
+      </div>
+      <div class="example__images">
+        <img src="img/cat-before-mobile.png" alt="Кот до программы" width="280" height="232">
+        <img src="img/cat-after-mobile.png" alt="Кот после программы" width="243" height="232">
+        <div class="example__states">
+          <button class="example__button example__button--current" type="button">Было</button>
+          <div class="example__line">
+            <div class="example__line-indicator"></div>
+          </div>
+          <button class="example__button example__button--pending" type="button">Стало</button>
+        </div>
       </div>
     </div>
   </section>
@@ -109,7 +117,7 @@
         <h3 class="contact__title">приглашаем к сотрудничеству дилеров!</h3>
         <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <img src="img/location.png" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="640" height="724">
+      <img class="contact__map" src="img/location.png" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="640" height="724">
     </div>
   </div>
   <div class="page-footer__container">
@@ -136,7 +144,7 @@
     <div class="page-footer__copyright copyright">
       <a href="https://htmlacademy.ru/" class="copyright__link">
         <span class="copyright__text">HTML Academy</span>
-        <img src="img/htmlacademy.svg" alt="HTML Academy" width="16" height="16">
+        <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
       </a>
     </div>
   </div>

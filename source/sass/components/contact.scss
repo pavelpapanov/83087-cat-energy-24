@@ -1,11 +1,9 @@
 @import "../global/variables";
 
-.contact {
-  background-color: $basic_grey;
-}
-
 .contact__wrapper {
   padding: 26px 20px;
+  background-color: $basic_white;
+  display: flex;
 }
 
 .contact__title {
@@ -15,10 +13,54 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  max-width: 139px;
 }
 
 .contact__address {
   font-family: $secondary_font;
   font-style: inherit;
   line-height: 20px;
+  max-width: 139px;
+  margin-left: auto;
+}
+
+.contact__map {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: $tablet_width) {
+  .contact__wrapper {
+    padding: 56px 70px;
+  }
+
+  .contact__title {
+    max-width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contact__address {
+    max-width: 160px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .contact__container {
+    position: relative;
+  }
+
+  .contact__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .contact__title {
+    max-width: 163px;
+  }
 }
