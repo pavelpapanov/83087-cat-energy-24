@@ -3,14 +3,14 @@
 
 .page-footer {
   max-width: $desktop_width;
-  @include margin-side-auto();
+  @include margin-side-auto;
   background-color: $basic_grey;
 }
 
 .page-footer__container {
   padding: 39px 20px 22px;
   max-width: 1220px;
-  @include margin-side-auto();
+  @include margin-side-auto;
 }
 
 .page-footer__logo {

@@ -4,7 +4,7 @@
 .container {
   padding-left: 20px;
   padding-right: 20px;
-  @include margin-side-auto();
+  @include margin-side-auto;
 }
 
 @media (min-width: $tablet_width) {

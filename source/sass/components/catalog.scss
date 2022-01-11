@@ -16,7 +16,7 @@
     left: -20px;
     right: 0;
     height: 1px;
-    width: calc(100%  + 40px);
+    width: calc(100% + 40px);
     background-color: $special_grey-3;
   }
 
@@ -55,7 +55,7 @@
 
 @media (min-width: $desktop_width) {
   .catalog__list {
-      margin-right: -80px;
+    margin-right: -80px;
   }
 
   .catalog__item {
