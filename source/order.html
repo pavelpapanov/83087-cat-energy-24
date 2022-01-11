@@ -10,18 +10,19 @@
 <body class="page__body">
 <header class="page-header">
   <div class="page-header__container container">
-    <a href="#" class="page-header__logo">
+    <a href="index.html" class="page-header__logo">
       <img src="img/logo-mobile.svg" alt="Cat energy" class="page-header__logo-icon logo-icon" width="34" height="38">
       <img src="img/logo-text.svg" alt="Cat energy" class="page-header__logo-text logo-text" width="101" height="18">
       <span class="visually-hidden">Cat energy</span>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span><span class="main-nav__toggle-line"></span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html">Главная</a></li>
           <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a>Подбор программы</a></li>
+          <li class="site-list__item"><a href="order.html">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -85,34 +86,36 @@
         <h2 class="form__title">Комментарий</h2>
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота" class="form__textarea" aria-label="Комментарий"></textarea>
         <h2 class="form__title">Дополнительно</h2>
-        <div class="form__group">
-          <label for="sweetener" class="form__check">
-            <input type="checkbox" name="sweetener" id="sweetener" value="sweetener" class="form__check-input">
-            <span class="form__check-box"></span>
-            сахарозаменитель
-          </label>
-        </div>
-        <div class="form__group">
-          <label for="water" class="form__check">
-            <input type="checkbox" name="water" id="water" value="water" class="form__check-input">
-            <span class="form__check-box"></span>
-            питьевая вода
-          </label>
-        </div>
-        <div class="form__group">
-          <label for="milk" class="form__check">
-            <input type="checkbox" name="milk" id="milk" value="milk" class="form__check-input">
-            <span class="form__check-box"></span>
-            молоко
-          </label>
-        </div>
-        <div class="form__group">
-          <label for="vitamins" class="form__check">
-            <input type="checkbox" name="vitamins" id="vitamins" value="vitamins" class="form__check-input">
-            <span class="form__check-box"></span>
-            витамины
-          </label>
-        </div>
+        <fieldset class="form__additional">
+          <div class="form__group">
+            <label for="sweetener" class="form__check">
+              <input type="checkbox" name="sweetener" id="sweetener" value="sweetener" class="form__check-input">
+              <span class="form__check-box"></span>
+              сахарозаменитель
+            </label>
+          </div>
+          <div class="form__group">
+            <label for="water" class="form__check">
+              <input type="checkbox" name="water" id="water" value="water" class="form__check-input">
+              <span class="form__check-box"></span>
+              питьевая вода
+            </label>
+          </div>
+          <div class="form__group">
+            <label for="milk" class="form__check">
+              <input type="checkbox" name="milk" id="milk" value="milk" class="form__check-input">
+              <span class="form__check-box"></span>
+              молоко
+            </label>
+          </div>
+          <div class="form__group">
+            <label for="vitamins" class="form__check">
+              <input type="checkbox" name="vitamins" id="vitamins" value="vitamins" class="form__check-input">
+              <span class="form__check-box"></span>
+              витамины
+            </label>
+          </div>
+        </fieldset>
         <button class="form__button button">отправить заявку</button>
         <small class="form__accent">* — Обязательные поля</small>
       </form>
@@ -127,7 +130,7 @@
         <h3 class="contact__title">приглашаем к сотрудничеству дилеров!</h3>
         <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <img src="img/location.png" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="640" height="724">
+      <img class="contact__map" src="img/location.png" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="640" height="724">
     </div>
   </div>
   <div class="page-footer__container">

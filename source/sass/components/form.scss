@@ -11,8 +11,29 @@
 }
 
 .form__fieldset {
+  border: 0;
+  position: relative;
   padding: 22px 0 20px;
-  margin: 10px 0 26px;
+  margin: 24px 0 26px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    height: 1px;
+    width: calc(100%  + 40px);
+    background-color: $special_grey-3;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
 }
 
 .form__group:last-of-type {
@@ -54,10 +75,17 @@
   border: 1px solid #e7e7e7;
 }
 
+.form__additional {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
 .form__button {
   display: block;
   width: 100%;
   padding: 7px 15px;
+  margin-top: 34px;
   margin-bottom: 21px;
   line-height: 20px;
 }
@@ -69,4 +97,21 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+}
+
+@media (min-width: $tablet_width) {
+  .form__fieldset {
+    border: 1px solid #e7e7e7;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  .form__additional {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 60px;
+  }
 }
