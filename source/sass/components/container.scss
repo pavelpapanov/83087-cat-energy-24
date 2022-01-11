@@ -2,9 +2,9 @@
 @import "../global/mixins";
 
 .container {
+  @include margin-side-auto;
   padding-left: 20px;
   padding-right: 20px;
-  @include margin-side-auto;
 }
 
 @media (min-width: $tablet_width) {

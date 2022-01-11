@@ -2,15 +2,15 @@
 @import "../global/mixins";
 
 .page-footer {
-  max-width: $desktop_width;
   @include margin-side-auto;
+  max-width: $desktop_width;
   background-color: $basic_grey;
 }
 
 .page-footer__container {
+  @include margin-side-auto;
   padding: 39px 20px 22px;
   max-width: 1220px;
-  @include margin-side-auto;
 }
 
 .page-footer__logo {
