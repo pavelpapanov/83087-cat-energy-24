@@ -39,49 +39,55 @@
     <div class="container">
       <h2 class="visually-hidden">Анкета для программы питания вашего кота</h2>
       <form action="https://echo.htmlacademy.ru" class="form">
-        <div class="form__group">
-          <label for="name" class="form__label">Имя:*</label>
-          <input type="text" id="name" placeholder="Барсик" class="form__input">
-        </div>
-        <div class="form__group">
-          <label for="weight" class="form__label">Вес (кг):*</label>
-          <input type="text" id="weight" placeholder="Барсик" class="form__input">
-        </div>
-        <div class="form__group">
-          <label for="age" class="form__label">Возраст (лет):*</label>
-          <input type="text" id="age" placeholder="Барсик" class="form__input">
-        </div>
-        <fieldset class="form__fieldset">
-          <div class="form__group">
-            <label for="slimming" class="form__radio">
-              <input type="radio" name="program" id="slimming" value="slimming" class="form__radio-input">
-              <span class="form__radio-box"></span>
-              Похудение
-            </label>
+        <div class="form__header">
+          <div class="form__pet-info">
+            <div class="form__group">
+              <label for="name" class="form__label">Имя:*</label>
+              <input type="text" id="name" placeholder="Барсик" class="form__input">
+            </div>
+            <div class="form__group">
+              <label for="weight" class="form__label">Вес (кг):*</label>
+              <input type="text" id="weight" placeholder="7" class="form__input">
+            </div>
+            <div class="form__group">
+              <label for="age" class="form__label">Возраст (лет):*</label>
+              <input type="text" id="age" placeholder="7" class="form__input">
+            </div>
           </div>
-          <div class="form__group">
-            <label for="weightGain" class="form__radio">
-              <input type="radio" name="program" id="weightGain" value="weightGain" class="form__radio-input">
-              <span class="form__radio-box"></span>
-              Набор массы
-            </label>
-          </div>
-          <div class="form__group">
-            <label for="needHelp" class="form__radio">
-              <input type="radio" name="program" id="needHelp" value="needHelp" class="form__radio-input">
-              <span class="form__radio-box"></span>
-              Не знаю (Нужен ваш совет)
-            </label>
-          </div>
-        </fieldset>
+          <fieldset class="form__program">
+            <div class="form__group">
+              <label for="slimming" class="form__radio">
+                <input type="radio" name="program" id="slimming" value="slimming" class="form__radio-input">
+                <span class="form__radio-box"></span>
+                Похудение
+              </label>
+            </div>
+            <div class="form__group">
+              <label for="weightGain" class="form__radio">
+                <input type="radio" name="program" id="weightGain" value="weightGain" class="form__radio-input">
+                <span class="form__radio-box"></span>
+                Набор массы
+              </label>
+            </div>
+            <div class="form__group">
+              <label for="needHelp" class="form__radio">
+                <input type="radio" name="program" id="needHelp" value="needHelp" class="form__radio-input">
+                <span class="form__radio-box"></span>
+                Не знаю (Нужен ваш совет)
+              </label>
+            </div>
+          </fieldset>
+        </div>
         <h2 class="form__title">Контактные данные (владельца кота)</h2>
-        <div class="form__group">
-          <label for="email" class="form__label">E-mail:*</label>
-          <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" class="form__input form__input--email">
-        </div>
-        <div class="form__group">
-          <label for="phone" class="form__label">Телефон:*</label>
-          <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" class="form__input form__input--phone">
+        <div class="form__contacts">
+          <div class="form__group">
+            <label for="email" class="form__label">E-mail:*</label>
+            <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" class="form__input form__input--email">
+          </div>
+          <div class="form__group">
+            <label for="phone" class="form__label">Телефон:*</label>
+            <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" class="form__input form__input--phone">
+          </div>
         </div>
         <h2 class="form__title">Комментарий</h2>
         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота" class="form__textarea" aria-label="Комментарий"></textarea>
@@ -116,8 +122,10 @@
             </label>
           </div>
         </fieldset>
-        <button class="form__button button">отправить заявку</button>
-        <small class="form__accent">* — Обязательные поля</small>
+        <div class="form__footer">
+          <button class="form__button button">отправить заявку</button>
+          <small class="form__accent">* — Обязательные поля</small>
+        </div>
       </form>
     </div>
   </section>

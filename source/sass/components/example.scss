@@ -16,7 +16,7 @@
   margin-bottom: 20px;
 }
 
-.example__additional-info {
+.example__data {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -54,7 +54,7 @@
     background-color: transparent;
   }
 
-  .example__additional-info {
+  .example__data {
     justify-content: flex-start;
     flex-wrap: nowrap;
   }
@@ -84,7 +84,7 @@
     max-width: 440px;
   }
 
-  .example__additional-info {
+  .example__data {
     flex-wrap: wrap;
   }
 

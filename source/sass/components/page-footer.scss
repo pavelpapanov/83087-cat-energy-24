@@ -1,17 +1,16 @@
 @import "../global/variables";
+@import "../global/mixins";
 
 .page-footer {
   max-width: $desktop_width;
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-side-auto();
   background-color: $basic_grey;
 }
 
 .page-footer__container {
   padding: 39px 20px 22px;
   max-width: 1220px;
-  margin-left: auto;
-  margin-right: auto;
+  @include margin-side-auto();
 }
 
 .page-footer__logo {
