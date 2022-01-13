@@ -27,3 +27,32 @@
     border-bottom: 1px solid $special_grey;
   }
 }
+
+@media (min-width: $tablet_width) {
+  .additional-products__item {
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
+    padding: 26px 38px 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .additional-products__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .additional-products__title {
+    flex-basis: 100%;
+  }
+
+  .additional-products__list {
+    flex-basis: 895px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .additional-products__item {
+    padding: 15px 0 17px;
+  }
+}

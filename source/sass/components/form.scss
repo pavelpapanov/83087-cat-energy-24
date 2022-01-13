@@ -10,9 +10,30 @@
   margin-bottom: 14px;
 }
 
-.form__fieldset {
+.form__program {
+  border: 0;
+  position: relative;
   padding: 22px 0 20px;
-  margin: 10px 0 26px;
+  margin: 24px 0 26px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: 0;
+    height: 1px;
+    width: calc(100% + 40px);
+    background-color: $special_grey-3;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
 }
 
 .form__group:last-of-type {
@@ -54,6 +75,16 @@
   border: 1px solid #e7e7e7;
 }
 
+.form__contacts {
+  margin-bottom: 24px;
+}
+
+.form__additional {
+  border: 0;
+  padding: 0;
+  margin: 0 0 34px;
+}
+
 .form__button {
   display: block;
   width: 100%;
@@ -69,4 +100,98 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+}
+
+@media (min-width: $tablet_width) {
+  .form {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 72px;
+  }
+
+  .form__group {
+    margin-bottom: 20px;
+  }
+
+  .form__program {
+    border: 1px solid #e7e7e7;
+    padding: 25px 28px;
+    margin-top: 72px;
+    margin-bottom: 75px;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  .form__title {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 76px;
+  }
+
+  .form__textarea {
+    width: 100%;
+    height: 174px;
+    margin-bottom: 65px;
+  }
+
+  .form__contacts {
+    margin-bottom: 65px;
+  }
+
+  .form__additional {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 60px;
+  }
+
+  .form__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    align-items: center;
+  }
+
+  .form__button {
+    margin-bottom: 0;
+  }
+
+  .form__accent {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .form {
+    margin-bottom: 82px;
+  }
+
+  .form__header,
+  .form__contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .form__pet-info,
+  .form__program {
+    width: 570px;
+  }
+
+  .form__program {
+    margin: 0;
+  }
+
+  .form__additional {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 60px;
+  }
+
+  .form__additional,
+  .form__footer {
+    grid-column-gap: 80px;
+  }
 }

@@ -12,3 +12,8 @@
   font-weight: normal;
   line-height: 40px;
 }
+
+@mixin margin-side-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
