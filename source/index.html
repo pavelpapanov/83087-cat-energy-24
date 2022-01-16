@@ -15,14 +15,14 @@
       <img src="img/logo-text.svg" alt="Cat energy" class="page-header__logo-text logo-text" width="101" height="18">
       <span class="visually-hidden">Cat energy</span>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span><span class="main-nav__toggle-line"></span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a>Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="order.html">Подбор программы</a></li>
+          <li class="site-list__item"><a class="site-list__link site-list__link--active">Главная</a></li>
+          <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог продукции</a></li>
+          <li class="site-list__item"><a href="order.html" class="site-list__link">Подбор программы</a></li>
         </ul>
       </div>
     </nav>
@@ -115,13 +115,15 @@
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contact__wrapper">
         <h3 class="contact__title">приглашаем к сотрудничеству дилеров!</h3>
-        <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contact__address">ул. Большая Конюшенная, д. 19/8 <span class="contact__address-city">Санкт-Петербург</span></address>
       </div>
       <img class="contact__map" src="img/location.png" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="640" height="724">
     </div>
   </div>
   <div class="page-footer__container">
-    <img src="img/logo-text.svg" alt="Кэт энерджи" width="101" height="18" class="page-footer__logo logo-text">
+    <a class="page-footer__logo">
+      <img src="img/logo-text.svg" alt="Кэт энерджи" width="101" height="18" class="logo-text">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

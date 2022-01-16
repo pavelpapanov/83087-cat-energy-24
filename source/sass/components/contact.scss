@@ -43,6 +43,12 @@
   .contact__address {
     max-width: 160px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__address-city {
+    margin-top: auto;
   }
 }
 

@@ -1,11 +1,29 @@
 @import "../global/variables";
 
 .page-header__container {
-  padding-top: 10px;
-  padding-bottom: 17px;
+  padding-top: 6px;
+  padding-bottom: 13px;
   display: flex;
+  align-items: center;
 }
 
 .page-header__logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.page-header__logo-text {
+  margin-left: 56px;
+}
+
+@media (min-width: $tablet_width) {
+  .page-header__container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .page-header__logo-text {
+    margin-left: 12px;
+  }
 }

@@ -29,8 +29,21 @@
 }
 
 @media (min-width: $tablet_width) {
+  .example__stats {
+    padding: 14px 15px 19px;
+  }
+
   .example-stats__text {
     background-color: $basic_white;
+    padding: 0 7px;
+    bottom: -5px;
     width: max-content;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example-stats__num {
+    font-size: 30px;
+    line-height: 37px;
   }
 }

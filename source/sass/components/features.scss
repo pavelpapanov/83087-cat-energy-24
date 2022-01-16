@@ -5,6 +5,8 @@
   font-family: $secondary_font;
   margin-bottom: 20px;
   position: relative;
+  padding-left: 80px;
+  min-height: 60px;
 
   &:last-child {
     margin-bottom: 0;
@@ -16,6 +18,9 @@
     width: 60px;
     height: 60px;
     background: $basic_green no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &--leaf::before {
@@ -50,11 +55,42 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 77px;
+    counter-reset: item;
+    margin-bottom: 47px;
   }
 
   .features__item {
+    padding-left: 0;
+    padding-top: 40px;
     margin-bottom: 0;
     max-width: 250px;
+    min-height: 280px;
+
+    &::before {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+
+    &::after {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      font-family: $primary_font;
+      font-size: 280px;
+      line-height: 1;
+      color: $basic_grey;
+    }
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 32px;
   }
 }
 

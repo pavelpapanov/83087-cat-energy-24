@@ -27,8 +27,17 @@
 }
 
 @media (min-width: $tablet_width) {
+  .program__container {
+    margin-bottom: 45px;
+  }
+
   .program__item {
     margin-bottom: 30px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 1;
   }
 }
 
