@@ -4,7 +4,7 @@
   background-color: $basic_grey;
   position: relative;
 
-  &--slim  .program-card__title::after {
+  &--slim .program-card__title::after {
     background-image: url("../../img/cat-slim.svg");
     background-size: 36px 50px;
     top: -3px;
@@ -78,7 +78,7 @@
     min-height: 372px;
     padding: 77px 316px 53px 52px;
 
-    &--slim  .program-card__title::after {
+    &--slim .program-card__title::after {
       background-size: 140px 194px;
       left: unset;
       top: 81px;
@@ -127,7 +127,7 @@
   .program-card {
     padding: 47px 51px 55px;
 
-    &--slim  .program-card__title::after {
+    &--slim .program-card__title::after {
       background-size: 70px 97px;
       top: -6px;
       left: 15px;
