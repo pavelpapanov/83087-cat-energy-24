@@ -42,6 +42,10 @@
 }
 
 @media (min-width: $desktop_width) {
+  .program__container {
+    margin-bottom: 70px;
+  }
+
   .program__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

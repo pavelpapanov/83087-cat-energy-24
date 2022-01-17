@@ -52,7 +52,7 @@
   padding: 7px 44px;
   line-height: 26px;
   position: relative;
-  width: 100%;
+  width: max-content;
 }
 
 @media (min-width: $tablet_width) {
@@ -88,6 +88,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 49px;
+    max-width: 414px;
   }
 
   .promo__image {
@@ -97,5 +98,37 @@
   .promo__button {
     padding: 14px 26px;
     width: auto;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .promo {
+    position: relative;
+    max-width: 1440px;
+    @include margin-side-auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -150px;
+      right: 0;
+      z-index: -2;
+      display: inline-block;
+      width: 720px;
+      height: 694px;
+      background-color: rgba($basic_green, 0.85);
+    }
+  }
+
+  .promo__container {
+    padding-top: 75px;
+    padding-bottom: 185px;
+    margin-bottom: 82px;
+  }
+
+  .promo__image {
+    position: absolute;
+    left: 448px;
+    z-index: -1;
   }
 }

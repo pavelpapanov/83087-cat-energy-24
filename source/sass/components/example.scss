@@ -143,6 +143,8 @@
 @media (min-width: $desktop_width) {
   .example__container {
     display: flex;
+    padding-bottom: 65px;
+    border: 0;
 
     &::after {
       left: -80px;
@@ -170,5 +172,6 @@
   .example__images {
     margin-left: auto;
     max-width: 592px;
+    min-height: auto;
   }
 }
