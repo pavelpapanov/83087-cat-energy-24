@@ -27,12 +27,25 @@
 }
 
 @media (min-width: $tablet_width) {
+  .program__container {
+    margin-bottom: 45px;
+  }
+
   .program__item {
     margin-bottom: 30px;
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 1;
   }
 }
 
 @media (min-width: $desktop_width) {
+  .program__container {
+    margin-bottom: 70px;
+  }
+
   .program__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
