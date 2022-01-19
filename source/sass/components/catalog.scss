@@ -3,11 +3,17 @@
 
 .catalog__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -20px;
 }
 
 .catalog__item {
   position: relative;
   padding: 19px 0 25px;
+  margin-right: 20px;
+  width: 280px;
 
   &::before,
   &:last-child::after {
@@ -31,15 +37,12 @@
 
 @media (min-width: $tablet_width) {
   .catalog__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-right: -60px;
   }
 
   .catalog__item {
     border-top: 0;
-    padding: 0 36px 39px;
+    padding: 0 38px 39px;
     margin-right: 60px;
     margin-bottom: 68px;
     height: 430px;
@@ -54,6 +57,10 @@
 }
 
 @media (min-width: $desktop_width) {
+  .catalog__title {
+    margin-bottom: 165px;
+  }
+
   .catalog__list {
     margin-right: -80px;
   }
