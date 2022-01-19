@@ -86,6 +86,8 @@
   align-items: center;
   padding-left: 45px;
   min-height: 30px;
+  color: #222222;
+  text-transform: uppercase;
 }
 
 .form__radio-box,
@@ -143,12 +145,6 @@
 .form__textarea::placeholder {
   color: $special_dark-grey;
   opacity: 1;
-}
-
-.form__radio,
-.form__check {
-  color: #222222;
-  text-transform: uppercase;
 }
 
 .form__title {
