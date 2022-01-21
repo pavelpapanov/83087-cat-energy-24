@@ -114,6 +114,7 @@
 
   .additional-products__title {
     flex-basis: 100%;
+    margin-left: 0;
   }
 
   .additional-products {
@@ -142,9 +143,5 @@
   .additional-products__item .product-card__button {
     max-width: 244px;
     margin-top: 0;
-  }
-
-  .additional-products__title {
-    margin-left: 0;
   }
 }
