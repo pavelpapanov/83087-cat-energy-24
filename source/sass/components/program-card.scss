@@ -5,7 +5,7 @@
   position: relative;
 
   &--slim .program-card__title::after {
-    background-image: url("../../img/cat-slim.svg");
+    background-image: url("../img/cat-slim.svg");
     background-size: 36px 50px;
     top: -3px;
     left: 7px;
@@ -14,7 +14,7 @@
   }
 
   &--pro .program-card__title::after {
-    background-image: url("../../img/cat-pro.svg");
+    background-image: url("../img/cat-pro.svg");
     top: 11px;
     left: -10px;
     width: 67px;
@@ -66,7 +66,7 @@
     content: "";
     display: inline-block;
     margin-left: 15px;
-    background-image: url("../../img/icon-arrow.svg");
+    background-image: url("../img/icon-arrow.svg");
     background-size: 24px 12px;
     width: 24px;
     height: 12px;

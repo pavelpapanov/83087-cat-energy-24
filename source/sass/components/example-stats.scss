@@ -47,3 +47,9 @@
     line-height: 37px;
   }
 }
+
+@media (min-width: $desktop_width) {
+  .example-stats__text {
+    background-color: $special_light-grey;
+  }
+}

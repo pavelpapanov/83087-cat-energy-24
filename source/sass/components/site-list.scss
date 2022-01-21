@@ -57,11 +57,11 @@
 }
 
 @media (min-width: $desktop_width) {
-  .site-list__link {
+  .site-list--main .site-list__link {
     color: $basic_white;
+  }
 
-    &--active {
-      border-color: $basic_white;
-    }
+  .site-list--main .site-list__link--active {
+    border-color: $basic_white;
   }
 }
