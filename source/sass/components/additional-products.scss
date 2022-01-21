@@ -116,26 +116,18 @@
     flex-basis: 100%;
   }
 
-  .additional-products__list {
-    flex-basis: 895px;
-    margin-right: 0;
-  }
-
-  .additional-products__item {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: $desktop_width) {
   .additional-products {
     margin-bottom: 85px;
   }
 
   .additional-products__list {
+    flex-basis: 895px;
+    margin-right: 0;
     margin-bottom: 0;
   }
 
   .additional-products__item {
+    margin-right: 0;
     align-items: center;
     padding: 15px 0 16px;
     border-left: 0;
