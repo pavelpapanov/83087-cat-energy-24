@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.product-card__header {
+.product-card__image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +161,7 @@
     margin-top: auto;
   }
 
-  .product-card__header {
+  .product-card__image-wrapper {
     flex-basis: 161px;
     height: 161px;
   }
