@@ -6,13 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
 <header class="page-header">
   <div class="page-header__container container">
     <a href="#" class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Cat energy" class="page-header__logo-icon logo-icon" width="34" height="38">
-      <img src="img/logo-text.svg" alt="Cat energy" class="page-header__logo-text logo-text" width="101" height="18">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Cat energy" class="page-header__logo-image" width="191" height="38">
+      </picture>
       <span class="visually-hidden">Cat energy</span>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -33,8 +40,12 @@
     <div class="container promo__container">
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
-      <img src="img/promo-product.png" alt="Cat energy pro со вкусом курицы" class="promo__image" width="280" height="270">
-      <a href="#" class="promo__button button">подобрать программу</a>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/promo-product-desktop.png 1x, img/promo-product-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/promo-product-tablet.png 1x, img/promo-product-tablet@2x.png 2x">
+        <img src="img/promo-product-mobile.png" srcset="img/promo-product-mobile@2x.png 2x" alt="Cat energy pro со вкусом курицы" class="promo__image" width="280" height="270">
+      </picture>
+      <a href="order.html" class="promo__button button">подобрать программу</a>
     </div>
   </section>
   <section class="program">
@@ -96,8 +107,14 @@
         </div>
       </div>
       <div class="example__images">
-        <img src="img/cat-before-mobile.png" alt="Кот до программы" width="280" height="232">
-        <img src="img/cat-after-mobile.png" alt="Кот после программы" width="243" height="232">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet.png 2x">
+          <img src="img/cat-before-mobile.png" alt="Кот до программы" srcset="img/cat-before-mobile@2x.png" width="280" height="232">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet.png 2x">
+          <img src="img/cat-after-mobile.png" alt="Кот после программы" srcset="img/cat-after-mobile@2x.png" width="243" height="232">
+        </picture>
         <div class="example__states">
           <button class="example__button example__button--current" type="button">Было</button>
           <div class="example__line">
@@ -117,12 +134,16 @@
         <h3 class="contact__title">приглашаем к сотрудничеству дилеров!</h3>
         <address class="contact__address">ул. Большая Конюшенная, д. 19/8 <span class="contact__address-city">Санкт-Петербург</span></address>
       </div>
-      <img class="contact__map" src="img/location.png" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="640" height="724">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+        <img class="contact__map" src="img/map-mobile.jpg" srcset="img/map-mobile.jpg" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
+      </picture>
     </div>
   </div>
   <div class="page-footer__container">
     <a class="page-footer__logo">
-      <img src="img/logo-text.svg" alt="Кэт энерджи" width="101" height="18" class="logo-text">
+      <img src="img/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">

@@ -17,8 +17,9 @@
   text-decoration: none;
 }
 
-.page-header__logo-text {
-  margin-left: 56px;
+.page-header__logo-image {
+  width: 191px;
+  height: 38px;
 }
 
 @media (min-width: $tablet_width) {
@@ -31,8 +32,9 @@
     padding-bottom: 24px;
   }
 
-  .page-header__logo-text {
-    margin-left: 12px;
+  .page-header__logo-image {
+    width: 174px;
+    height: 52px;
   }
 }
 
@@ -40,5 +42,10 @@
   .page-header__container {
     padding-top: 53px;
     padding-bottom: 53px;
+  }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 }
