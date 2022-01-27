@@ -41,6 +41,9 @@
       <h1 class="promo__title">Функциональное питание для котов</h1>
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-product-desktop.webp 1x, img/promo-product-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-product-tablet.webp 1x, img/promo-product-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/promo-product-mobile.webp 1x, img/promo-product-mobile@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/promo-product-desktop.png 1x, img/promo-product-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/promo-product-tablet.png 1x, img/promo-product-tablet@2x.png 2x">
         <img src="img/promo-product-mobile.png" srcset="img/promo-product-mobile@2x.png 2x" alt="Cat energy pro со вкусом курицы" class="promo__image" width="280" height="270">
@@ -135,6 +138,9 @@
         <address class="contact__address">ул. Большая Конюшенная, д. 19/8 <span class="contact__address-city">Санкт-Петербург</span></address>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
         <img class="contact__map" src="img/map-mobile.jpg" srcset="img/map-mobile.jpg" alt="Адрес компании Cat energy - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362">
@@ -167,7 +173,9 @@
     <div class="page-footer__copyright copyright">
       <a href="https://htmlacademy.ru/" class="copyright__link">
         <span class="copyright__text">HTML Academy</span>
-        <img src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+        <svg width="27" height="34" aria-label="Сайт HTML Academy">
+          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </div>
