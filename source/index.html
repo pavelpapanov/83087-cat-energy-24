@@ -14,12 +14,16 @@
 <body class="page__body">
 <header class="page-header">
   <div class="page-header__container container">
-    <a href="#" class="page-header__logo">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img src="img/logo-mobile.svg" alt="Cat energy" class="page-header__logo-image" width="191" height="38">
-      </picture>
+    <a class="page-header__logo logo">
+      <svg width="191" height="38" class="logo__mobile">
+        <use xlink:href="img/sprite.svg#logo-mobile"></use>
+      </svg>
+      <svg width="174" height="52" class="logo__tablet">
+        <use xlink:href="img/sprite.svg#logo-tablet"></use>
+      </svg>
+      <svg width="202" height="59" class="logo__desktop">
+        <use xlink:href="img/sprite.svg#logo-desktop"></use>
+      </svg>
       <span class="visually-hidden">Cat energy</span>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -149,23 +153,35 @@
   </div>
   <div class="page-footer__container">
     <a class="page-footer__logo">
-      <img src="img/logo-text.svg" alt="Кэт энерджи" width="128" height="24">
+      <span class="visually-hidden">Кэт энерджи</span>
+      <svg width="128" height="24">
+        <use xlink:href="img/sprite.svg#logo-text"></use>
+      </svg>
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="https://vk.com/htmlacademy" class="social__link social__link--vkontakte">
+          <a href="https://vk.com/htmlacademy" class="social__link ">
             <span class="visually-hidden">vk</span>
+            <svg width="29" height="18">
+              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="https://www.instagram.com/htmlacademy/" class="social__link social__link--instagram">
+          <a href="https://www.instagram.com/htmlacademy/" class="social__link">
             <span class="visually-hidden">instagram</span>
+            <svg width="23" height="23">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--facebook">
+          <a href="https://www.facebook.com/htmlacademy" class="social__link">
             <span class="visually-hidden">facebook</span>
+            <svg width="15" height="29">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
           </a>
         </li>
       </ul>
