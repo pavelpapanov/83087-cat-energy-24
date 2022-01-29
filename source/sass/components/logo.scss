@@ -1,0 +1,26 @@
+@import "../global/variables";
+
+.logo__tablet,
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet_width) {
+  .logo__tablet {
+    display: block;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .logo__desktop {
+    display: block;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+}
