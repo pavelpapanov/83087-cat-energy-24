@@ -138,12 +138,27 @@
     position: relative;
     min-height: 632px;
   }
+
+  .example__images-after,
+  .example__images-before {
+    width: 592px;
+    height: 511px;
+  }
+
+  .example__images-after {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop_width) {
+  .example {
+    padding-top: 0;
+  }
+
   .example__container {
     display: flex;
     padding-bottom: 65px;
+    padding-top: 0;
     border: 0;
 
     &::after {
@@ -154,7 +169,16 @@
   }
 
   .example__content {
+    margin-top: 43px;
     max-width: 440px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__text {
+    margin-bottom: 69px;
   }
 
   .example__data {
@@ -171,7 +195,9 @@
 
   .example__images {
     margin-left: auto;
+    margin-top: 0;
     max-width: 592px;
     min-height: auto;
+    width: 100%;
   }
 }
