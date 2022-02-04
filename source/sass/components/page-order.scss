@@ -1,0 +1,19 @@
+@import "../global/variables";
+
+@media (min-width: $tablet_width) {
+  .page-order {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+
+  .page-order__title {
+    margin-top: 41px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .page-order {
+    max-width: 100%;
+  }
+}

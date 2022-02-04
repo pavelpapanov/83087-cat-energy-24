@@ -80,6 +80,17 @@
 .product-card--empty .product-card__button {
   background-color: $basic_grey;
   color: $special_dark-grey;
+  transition: all 300ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $special_grey-3;
+    transition: all 300ms linear;
+  }
+
+  &:active {
+    color: rgba($special_dark-grey, 0.3);
+  }
 }
 
 .product-card__title {

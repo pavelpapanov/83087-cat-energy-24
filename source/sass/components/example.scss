@@ -50,6 +50,12 @@
   margin-top: 15px;
 }
 
+.example__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .example__slide {
   display: none;
 
@@ -158,9 +164,6 @@
     margin-top: 85px;
     position: relative;
     min-height: 632px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .example__slide,
@@ -178,6 +181,15 @@
   .example__button {
     font-size: 20px;
     border-bottom: 1px dotted rgba($basic_black, 0.4);
+
+    &:hover,
+    &:focus {
+      border-style: solid;
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 
   .example__line {
@@ -198,6 +210,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 300ms linear;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
 
     &::before {
       content: "";
@@ -210,6 +224,17 @@
       height: 8px;
       background-color: $basic_green;
       border-radius: 50%;
+    }
+
+    &:hover,
+    &:focus {
+      transition: all 300ms linear;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      border-color: $basic_green;
     }
   }
 }

@@ -47,6 +47,8 @@
 .form__textarea {
   color: $special_dark-grey;
   font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
 }
 
@@ -56,10 +58,25 @@
 }
 
 .form__input {
-  padding: 11px 15px 12px;
+  padding: 12px 15px 13px;
   width: 100%;
   border: 1px solid #e7e7e7;
   position: relative;
+
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: $special_dark-grey;
+  }
+
+  &:invalid {
+    border-width: 2px;
+    border-color: $status_error;
+  }
 
   &--email,
   &--phone {
@@ -90,6 +107,10 @@
   text-transform: uppercase;
 }
 
+.form__check:hover .form__check-box {
+  border-color: #bababa;
+}
+
 .form__radio-box,
 .form__check-box {
   position: absolute;
@@ -100,6 +121,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid $special_grey;
+  transition: all 300ms linear;
 }
 
 .form__radio-box {
@@ -115,9 +137,33 @@
   background-color: $basic_green;
 }
 
+.form__radio-input:hover + .form__radio-box {
+  border-color: #bababa;
+  transition: all 300ms linear;
+}
+
+.form__radio-input:disabled + .form__radio-box {
+  border-color: #bababa;
+  opacity: 0.3;
+}
+
+.form__radio-input:disabled ~ .form__radio-text {
+  opacity: 0.3;
+}
+
 .form__check-input:focus + .form__check-box,
 .form__check-input:checked:focus + .form__check-box {
   border-color: $basic_green;
+}
+
+.form__check-input:disabled + .form__check-box,
+.form__check-input:checked:disabled + .form__check-box {
+  opacity: 0.3;
+}
+
+.form__check-input:disabled ~ .form__check-text,
+.form__check-input:checked:disabled ~ .form__check-text {
+  opacity: 0.3;
 }
 
 .form__check-input:checked + .form__check-box::before {
@@ -162,6 +208,21 @@
   border: 1px solid #e7e7e7;
   width: 100%;
   height: 150px;
+
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    outline: none;
+    border-width: 2px;
+    border-color: $special_dark-grey;
+  }
+
+  &:invalid {
+    border-width: 2px;
+    border-color: $status_error;
+  }
 }
 
 .form__contacts {
@@ -179,7 +240,17 @@
   width: 100%;
   padding: 10px 15px;
   margin-bottom: 21px;
+  font-size: 16px;
   line-height: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba($basic_white, 0.3);
+  }
 }
 
 .form__accent {
@@ -199,8 +270,19 @@
     margin: 0 auto 72px;
   }
 
+  .form__label,
+  .form__input,
+  .form__textarea {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .form__group {
     margin-bottom: 20px;
+  }
+
+  .form__label {
+    margin-right: 20px;
   }
 
   .form__input {
@@ -225,10 +307,18 @@
     }
   }
 
+  .form__program .form__group {
+    margin-bottom: 13px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .form__title {
     font-size: 36px;
     line-height: 1;
-    margin-bottom: 76px;
+    margin-bottom: 73px;
   }
 
   .form__radio,
@@ -259,6 +349,7 @@
     width: 100%;
     height: 174px;
     margin-bottom: 65px;
+    padding: 10px 19px;
   }
 
   .form__contacts {
@@ -280,10 +371,15 @@
 
   .form__button {
     margin-bottom: 0;
+    padding: 13px 15px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   .form__accent {
     text-align: left;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -317,6 +413,10 @@
   .form__additional {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 60px;
+  }
+
+  .form__additional .form__group {
+    margin-bottom: 0;
   }
 
   .form__additional,

@@ -17,13 +17,13 @@
 <header class="page-header page-header--inside">
   <div class="page-header__container container">
     <a href="index.html" class="page-header__logo logo">
-      <svg width="191" height="38" class="logo__mobile">
+      <svg width="191" height="38" viewBox="0 0 191 38" class="logo__mobile">
         <use xlink:href="img/sprite.svg#logo-mobile"></use>
       </svg>
-      <svg width="174" height="52" class="logo__tablet">
+      <svg width="174" height="52" viewBox="0 0 174 52" class="logo__tablet">
         <use xlink:href="img/sprite.svg#logo-tablet"></use>
       </svg>
-      <svg width="202" height="59" class="logo__desktop">
+      <svg width="202" height="59" viewBox="0 0 202 59" class="logo__desktop">
         <use xlink:href="img/sprite.svg#logo-desktop"></use>
       </svg>
       <span class="visually-hidden">Cat energy</span>
@@ -45,7 +45,7 @@
 <main class="page-order">
   <section>
     <div class="container">
-      <h1 class="page__title">Подбор программы</h1>
+      <h1 class="page-order__title page__title">Подбор программы</h1>
       <p class="page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
   </section>
@@ -73,21 +73,21 @@
               <label for="slimming" class="form__radio">
                 <input type="radio" name="program" id="slimming" value="slimming" class="form__radio-input visually-hidden" checked>
                 <span class="form__radio-box"></span>
-                Похудение
+                <span class="form__radio-text">Похудение</span>
               </label>
             </div>
             <div class="form__group">
               <label for="weightGain" class="form__radio">
                 <input type="radio" name="program" id="weightGain" value="weightGain" class="form__radio-input visually-hidden">
                 <span class="form__radio-box"></span>
-                Набор массы
+                <span class="form__radio-text">Набор массы</span>
               </label>
             </div>
             <div class="form__group">
               <label for="needHelp" class="form__radio">
                 <input type="radio" name="program" id="needHelp" value="needHelp" class="form__radio-input visually-hidden">
                 <span class="form__radio-box"></span>
-                Не знаю (Нужен ваш совет)
+                <span class="form__radio-text">Не знаю (Нужен ваш совет)</span>
               </label>
             </div>
           </fieldset>
@@ -97,10 +97,16 @@
           <div class="form__group">
             <label for="email" class="form__label">E-mail:*</label>
             <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" class="form__input form__input--email">
+            <svg width="19" height="14" viewBox="0 0 19 14">
+              <use xlink:href="img/sprite.svg#icon-email"></use>
+            </svg>
           </div>
           <div class="form__group">
             <label for="phone" class="form__label">Телефон:*</label>
             <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" class="form__input form__input--phone">
+            <svg width="20" height="21" viewBox="0 0 20 21">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
         </div>
         <h2 class="form__title">Комментарий</h2>
@@ -111,28 +117,28 @@
             <label for="sweetener" class="form__check">
               <input type="checkbox" name="sweetener" id="sweetener" value="sweetener" class="form__check-input visually-hidden" checked>
               <span class="form__check-box"></span>
-              сахарозаменитель
+              <span class="form__check-text">сахарозаменитель</span>
             </label>
           </div>
           <div class="form__group">
             <label for="water" class="form__check">
               <input type="checkbox" name="water" id="water" value="water" class="form__check-input visually-hidden">
               <span class="form__check-box"></span>
-              питьевая вода
+              <span class="form__check-text">питьевая вода</span>
             </label>
           </div>
           <div class="form__group">
             <label for="milk" class="form__check">
               <input type="checkbox" name="milk" id="milk" value="milk" class="form__check-input visually-hidden">
               <span class="form__check-box"></span>
-              молоко
+              <span class="form__check-text">молоко</span>
             </label>
           </div>
           <div class="form__group">
             <label for="vitamins" class="form__check">
               <input type="checkbox" name="vitamins" id="vitamins" value="vitamins" class="form__check-input visually-hidden">
               <span class="form__check-box"></span>
-              витамины
+              <span class="form__check-text">витамины</span>
             </label>
           </div>
         </fieldset>
@@ -163,7 +169,7 @@
     </div>
   </div>
   <div class="page-footer__container">
-    <a class="page-footer__logo">
+    <a class="page-footer__logo" href="index.html">
       <span class="visually-hidden">Кэт энерджи</span>
       <svg width="128" height="24">
         <use xlink:href="img/sprite.svg#logo-text"></use>
