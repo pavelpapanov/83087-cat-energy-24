@@ -19,7 +19,7 @@
     height: 60px;
     background: $basic_green no-repeat center;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
   }
 
@@ -54,7 +54,7 @@
   .features__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 77px;
+    grid-gap: 37px 57px;
     counter-reset: item;
     margin-bottom: 47px;
   }
@@ -97,7 +97,7 @@
 @media (min-width: $desktop_width) {
   .features__list {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 55px;
+    grid-gap: 80px;
     margin-bottom: 26px;
   }
 }

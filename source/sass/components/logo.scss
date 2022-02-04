@@ -1,5 +1,16 @@
 @import "../global/variables";
 
+.logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo__tablet,
 .logo__desktop {
   display: none;

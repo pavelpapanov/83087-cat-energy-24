@@ -1,6 +1,7 @@
 @import "../global/variables";
 
 .main-nav {
+  margin-top: auto;
   margin-left: auto;
 
   &--closed .main-nav__toggle-line {
@@ -20,11 +21,11 @@
     }
 
     &::before {
-      top: 7px;
+      top: 8px;
     }
 
     &::after {
-      top: -7px;
+      top: -8px;
     }
   }
 
@@ -67,6 +68,7 @@
   user-select: none;
   position: relative;
   right: -10px;
+  top: 2px;
 }
 
 .main-nav__toggle-line {
@@ -86,7 +88,7 @@
   background-color: $basic_white;
 }
 
-@media (max-width: $tablet_width) {
+@media (max-width: $mobile_width_only) {
   .main-nav--closed .main-nav__wrapper {
     display: none;
   }
@@ -102,5 +104,11 @@
     position: relative;
     top: 0;
     background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .main-nav {
+    margin-top: unset;
   }
 }

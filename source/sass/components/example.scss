@@ -25,7 +25,7 @@
 }
 
 .example__stats {
-  padding: 14px 15px 18px;
+  padding: 13px 15px 17px;
   flex-basis: 124px;
 }
 
@@ -39,6 +39,10 @@
   flex-basis: 100%;
 }
 
+.example__price-value {
+  display: inline-block;
+}
+
 .example__states {
   display: flex;
   align-items: center;
@@ -46,10 +50,19 @@
   margin-top: 15px;
 }
 
+.example__slide {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .example__button {
   background-color: transparent;
   border: 0;
   padding: 0;
+  min-width: 49px;
   color: $basic_black;
   font-family: inherit;
   font-size: 16px;
@@ -82,6 +95,7 @@
   .example {
     background-color: transparent;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .example__container {
@@ -128,25 +142,75 @@
   }
 
   .example__price {
+    font-size: 20px;
     margin-left: auto;
     flex-basis: 174px;
     text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  .example__images {
-    margin-top: 80px;
+  .example__price-value {
+    margin-top: 9px;
+  }
+
+  .example__slider {
+    margin-top: 85px;
     position: relative;
     min-height: 632px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .example__images-after,
-  .example__images-before {
+  .example__slide,
+  .example__slide {
     width: 592px;
     height: 511px;
   }
 
-  .example__images-after {
-    display: none;
+  .example__states {
+    margin: 28px auto 0;
+    max-width: 582px;
+    justify-content: space-between;
+  }
+
+  .example__button {
+    font-size: 20px;
+    border-bottom: 1px dotted rgba($basic_black, 0.4);
+  }
+
+  .example__line {
+    margin-right: 23px;
+    margin-left: 23px;
+    width: 452px;
+    height: 6px;
+    background-color: $special_grey;
+    border-radius: 6px;
+  }
+
+  .example__line-indicator {
+    width: 34px;
+    height: 34px;
+    border: 1px solid $special_grey;
+    border-radius: 50%;
+    background-color: $basic_white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $basic_green;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -193,7 +257,12 @@
     text-align: left;
   }
 
-  .example__images {
+  .example__price-value {
+    margin-top: 0;
+    margin-left: 60px;
+  }
+
+  .example__slider {
     margin-left: auto;
     margin-top: 0;
     max-width: 592px;

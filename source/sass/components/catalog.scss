@@ -37,11 +37,13 @@
 
 @media (min-width: $tablet_width) {
   .catalog__title {
-    margin-bottom: 165px;
+    margin-top: 41px;
+    margin-bottom: 163px;
   }
 
   .catalog__list {
     margin-right: -60px;
+    margin-bottom: 68px;
   }
 
   .catalog__item {
@@ -53,6 +55,10 @@
     width: 324px;
     background-color: $basic_grey;
 
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
     &::before,
     &:last-child::after {
       content: none;
@@ -61,13 +67,22 @@
 }
 
 @media (min-width: $desktop_width) {
+  .catalog__title {
+    margin-top: 47px;
+  }
+
   .catalog__list {
     margin-right: -80px;
+    margin-bottom: 78px;
   }
 
   .catalog__item {
     width: 245px;
     margin-right: 80px;
     margin-bottom: 143px;
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
   }
 }

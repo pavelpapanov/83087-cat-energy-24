@@ -14,9 +14,10 @@
 }
 
 .page-footer__logo {
-  display: block;
+  display: flex;
   width: max-content;
-  margin: 0 auto 32px;
+  margin: 0 auto 29px;
+  line-height: 24px;
 }
 
 .page-footer__social {
@@ -33,9 +34,16 @@
 
   .page-footer__logo {
     margin: 0;
+    align-self: flex-end;
   }
 
   .page-footer__social {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .page-footer__container {
+    padding: 57px 0 55px;
   }
 }

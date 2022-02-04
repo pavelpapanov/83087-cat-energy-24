@@ -3,8 +3,7 @@
 
 .social__list {
   @include reset-list;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 11px 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
@@ -15,7 +14,7 @@
 .social__item {
   display: inline-block;
   line-height: 1;
-  margin-right: 10px;
+  margin-right: 16px;
 
   &:last-child {
     margin-right: 0;
@@ -23,8 +22,23 @@
 }
 
 .social__link {
-  padding: 5px;
+  padding: 10px;
   display: inline-block;
+}
+
+.social__link-vk {
+  width: 23px;
+  height: 16px;
+}
+
+.social__link-instagram {
+  width: 16px;
+  height: 16px;
+}
+
+.social__link-facebook {
+  width: 10px;
+  height: 18px;
 }
 
 @media (min-width: $tablet_width) {
@@ -34,10 +48,25 @@
   }
 
   .social__item {
-    margin-right: 21px;
+    margin-right: 27px;
   }
 
   .social__link {
     padding: 0;
+  }
+
+  .social__link-vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .social__link-instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link-facebook {
+    width: 13px;
+    height: 27px;
   }
 }

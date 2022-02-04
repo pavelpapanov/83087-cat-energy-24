@@ -37,7 +37,7 @@
 
 .banner__text {
   margin: 0;
-  padding-top: 185px;
+  padding-top: 187px;
   padding-bottom: 43px;
   color: $basic_white;
   font-family: $secondary_font;
@@ -77,8 +77,9 @@
     width: 245px;
     margin-left: auto;
     min-height: 288px;
+    max-height: max-content;
     background-image: url("../img/gift-background-desktop.jpg");
-    background-size: 246px 289px;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-background-desktop@2x.jpg");
@@ -90,7 +91,7 @@
   }
 
   .banner__text {
-    margin: auto 0 42px;
+    margin: 185px 0 42px;
     text-align: center;
   }
 }

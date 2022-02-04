@@ -1,0 +1,88 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+.additional-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-card__title {
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 13px;
+}
+
+.additional-card__details {
+  padding: 0;
+  margin: 0 0 15px;
+  border-collapse: collapse;
+  font-family: $secondary_font;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-card__details-cell {
+  padding: 0;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.additional-card__button {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  max-width: 280px;
+  width: 100%;
+}
+
+@media (min-width: $tablet_width) {
+  .additional-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additional-card__title,
+  .additional-card__details {
+    margin: 0;
+  }
+
+  .additional-card__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-card__details {
+    width: max-content;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-card__details-cell:first-child {
+    display: block;
+    margin-right: 46px;
+  }
+
+  .additional-card__button {
+    max-width: 100%;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: $desktop_width) {
+  .additional-card__details {
+    width: 288px;
+    margin-right: 38px;
+  }
+
+  .additional-card__button {
+    max-width: 244px;
+    margin-top: 0;
+  }
+}

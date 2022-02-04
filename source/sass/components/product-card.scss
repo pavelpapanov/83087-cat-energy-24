@@ -38,11 +38,31 @@
 
 .product-card--empty {
   background-color: $basic_white;
+  padding-top: 78px;
 }
 
 .product-card--empty .product-card__desc {
   text-align: center;
   width: 100%;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
 }
 
 .product-card--empty .product-card__title {
@@ -64,10 +84,15 @@
 
 .product-card__title {
   margin: 0 0 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.product-card__link {
   color: $special_dark-grey-2;
+  text-decoration: none;
 }
 
 .product-card__details {
@@ -116,6 +141,7 @@
   }
 
   .product-card--empty {
+    padding-top: 0;
     border: 1px solid $basic_grey;
   }
 

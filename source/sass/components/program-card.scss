@@ -24,7 +24,7 @@
 
 .program-card__title {
   position: relative;
-  margin: 0 0 20px;
+  margin: 0 0 22px;
   display: flex;
   align-items: center;
 
@@ -35,7 +35,7 @@
     height: 50px;
     flex-basis: 50px;
     flex-shrink: 0;
-    margin-right: 19px;
+    margin-right: 21px;
     background-color: $basic_green;
     border-radius: 50%;
   }
@@ -51,13 +51,15 @@
 
 .program-card__text {
   font-family: $secondary_font;
-  margin: 0 0 23px;
+  padding-bottom: 23px;
+  margin: 0 0 15px;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .program-card__link {
   color: $basic_black;
   font-size: 16px;
-  line-height: 1;
+  line-height: 24px;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
@@ -67,9 +69,22 @@
     display: inline-block;
     margin-left: 15px;
     background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
     background-size: 24px 12px;
-    width: 24px;
+    width: 32px;
     height: 12px;
+    transition: all 300ms linear;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active {
+    background-size: 32px 12px;
+    transition: all 300ms linear;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -113,6 +128,8 @@
   }
 
   .program-card__text {
+    padding-bottom: 0;
+    border-bottom: 0;
     margin-bottom: 48px;
   }
 
@@ -120,12 +137,20 @@
     display: flex;
     align-items: center;
     max-width: max-content;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &::after {
+      margin-left: 25px;
+    }
   }
 }
 
 @media (min-width: $desktop_width) {
   .program-card {
-    padding: 47px 51px 55px;
+    padding: 47px 51px 55px 52px;
 
     &--slim .program-card__title::after {
       background-size: 70px 97px;
@@ -166,7 +191,6 @@
 
   .program-card__link {
     font-size: 20px;
-    line-height: 38px;
 
     &::after {
       margin-left: 28px;
