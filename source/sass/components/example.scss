@@ -167,7 +167,6 @@
     min-height: 632px;
   }
 
-  .example__slide,
   .example__slide {
     width: 592px;
     height: 511px;
@@ -212,7 +211,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 300ms linear;
-    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
 
     &::before {
       content: "";
@@ -230,11 +229,11 @@
     &:hover,
     &:focus {
       transition: all 300ms linear;
-      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
     }
 
     &:active {
-      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
       border-color: $basic_green;
     }
   }
