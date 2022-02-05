@@ -10,6 +10,7 @@
   margin-bottom: 14px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .form__program {
@@ -58,7 +59,7 @@
 }
 
 .form__input {
-  padding: 12px 15px 13px;
+  padding: 9px 15px 10px;
   width: 100%;
   border: 1px solid #e7e7e7;
   position: relative;
@@ -77,23 +78,19 @@
     border-width: 2px;
     border-color: $status_error;
   }
+}
 
-  &--email,
-  &--phone {
-    padding-right: 51px;
-    background-repeat: no-repeat;
-  }
+.form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
   &--email {
-    background-image: url("../img/icon-email.svg");
-    background-size: 19px 14px;
-    background-position: right 16px center;
+    right: 16px;
   }
 
   &--phone {
-    background-image: url("../img/icon-phone.svg");
-    background-size: 20px 21px;
-    background-position: right 13px center;
+    right: 13px;
   }
 }
 
@@ -199,6 +196,26 @@
   font-weight: 400;
   line-height: 26px;
   margin: 0 0 35px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $basic_green;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+}
+
+.form__title-text {
+  background-color: $basic_white;
+  padding-right: 18px;
+  display: inline-block;
 }
 
 .form__textarea {
@@ -290,6 +307,14 @@
     line-height: 30px;
   }
 
+  .form__icon--email {
+    right: 18px;
+  }
+
+  .form__icon--phone {
+    right: 16px;
+  }
+
   .form__input::placeholder,
   .form__textarea::placeholder {
     font-size: 20px;
@@ -319,6 +344,29 @@
     font-size: 36px;
     line-height: 1;
     margin-bottom: 73px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $basic_green;
+      position: absolute;
+      top: 50%;
+      left: -69px;
+      z-index: -1;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      right: -69px;
+    }
+  }
+
+  .form__title-text {
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-left: -36px;
   }
 
   .form__radio,
@@ -387,6 +435,16 @@
   .form {
     margin-bottom: 82px;
     max-width: 100%;
+  }
+
+  .form__title {
+    &::before {
+      left: -110px;
+    }
+
+    &::after {
+      right: -110px;
+    }
   }
 
   .form__header,
