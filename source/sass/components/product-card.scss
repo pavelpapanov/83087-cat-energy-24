@@ -104,6 +104,15 @@
 .product-card__link {
   color: $special_dark-grey-2;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__details {

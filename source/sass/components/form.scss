@@ -72,11 +72,21 @@
     outline: none;
     border-width: 2px;
     border-color: $special_dark-grey;
+
+    + .form__icon--email,
+    + .form__icon--phone {
+      color: $basic_green;
+    }
   }
 
   &:invalid {
     border-width: 2px;
     border-color: $status_error;
+
+    + .form__icon--email,
+    + .form__icon--phone {
+      color: $status_error;
+    }
   }
 }
 
@@ -87,10 +97,12 @@
 
   &--email {
     right: 16px;
+    color: $special_dark-grey-2;
   }
 
   &--phone {
     right: 13px;
+    color: $basic_black;
   }
 }
 

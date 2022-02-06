@@ -24,6 +24,19 @@
 .social__link {
   padding: 10px;
   display: inline-block;
+  color: $special_grey-2;
+  transition: all 300ms linear;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $basic_green;
+    transition: all 300ms linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link-vk {

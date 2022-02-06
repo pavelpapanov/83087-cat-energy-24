@@ -8,6 +8,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 300ms linear;
+
+  &:hover .copyright__link-icon,
+  &:focus .copyright__link-icon,
+  &:active .copyright__link-icon {
+    color: $basic_green;
+    transition: all 300ms linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-icon {
+  color: $special_grey-2;
 }
 
 @media (min-width: $tablet_width) {
