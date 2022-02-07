@@ -102,11 +102,6 @@
     background-color: transparent;
     padding-bottom: 0;
     padding-top: 0;
-  }
-
-  .example__container {
-    border-top: 1px solid #e6e6e6;
-    padding-top: 43px;
     position: relative;
 
     &::after {
@@ -122,6 +117,12 @@
       width: 100%;
       background-color: $special_light-grey;
     }
+  }
+
+  .example__container {
+    border-top: 1px solid #e6e6e6;
+    padding-top: 43px;
+    position: relative;
   }
 
   .example__title {
@@ -242,6 +243,11 @@
 @media (min-width: $desktop_width) {
   .example {
     padding-top: 0;
+
+    &::after {
+      height: calc(100% - 179px);
+      width: 100%;
+    }
   }
 
   .example__container {
@@ -249,13 +255,6 @@
     padding-bottom: 65px;
     padding-top: 0;
     border: 0;
-
-    &::after {
-      height: calc(100% - 179px);
-      left: -80px;
-      right: -80px;
-      width: 1440px;
-    }
   }
 
   .example__content {

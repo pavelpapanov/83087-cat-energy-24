@@ -3,7 +3,6 @@
 
 .page-footer {
   @include margin-side-auto;
-  max-width: $desktop_width;
   background-color: $basic_grey;
 }
 
