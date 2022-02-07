@@ -69,21 +69,10 @@
     margin-bottom: 80px;
     font-size: 36px;
 
-    &::before {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 100%;
-      background-color: $basic_green;
-      position: absolute;
-      top: 50%;
-      left: -30px;
-      z-index: -1;
-      transform: translateY(-50%);
-    }
-
     &::after {
-      right: -30px;
+      width: 100vw;
+      left: calc(-50vw + 315px);
+      right: 0;
     }
   }
 
@@ -133,14 +122,8 @@
 }
 
 @media (min-width: $desktop_width) {
-  .additional-products__title {
-    &::before {
-      left: -110px;
-    }
-
-    &::after {
-      right: -110px;
-    }
+  .additional-products__title::after {
+    left: calc(-50vw + 610px);
   }
 
   .additional-products__title-text {

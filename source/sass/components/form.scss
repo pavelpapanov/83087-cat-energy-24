@@ -357,21 +357,10 @@
     line-height: 1;
     margin-bottom: 73px;
 
-    &::before {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 100%;
-      background-color: $basic_green;
-      position: absolute;
-      top: 50%;
-      left: -69px;
-      z-index: -1;
-      transform: translateY(-50%);
-    }
-
     &::after {
-      right: -69px;
+      width: 100vw;
+      left: calc(-50vw + 315px);
+      right: 0;
     }
   }
 
@@ -449,15 +438,8 @@
     max-width: 100%;
   }
 
-  .form__title {
-    &::before {
-      left: -100%;
-    }
-
-    &::after {
-      width: 200%;
-      right: -100%;
-    }
+  .form__title::after {
+    left: calc(-50vw + 610px);
   }
 
   .form__header,
